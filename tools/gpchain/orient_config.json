@@ -1,0 +1,15 @@
+{
+ "decision": "VES-3585: reading orientation by the geometric rule in orient.py (README of experiments/2026-11-08-ves3585-gp-orient)",
+ "rule": {
+  "status": "not-confirmed",
+  "why": "VES-3585: C_MEAS not ok; C_R_P4 not ok; no second scroll (attempt 4: PC-M1-1667 failed, C-R-1667 a reading)",
+  "code_head": "363f040ca709047feab64fb9aedfb283ea68a15a"
+ },
+ "scrolls": {
+  "PHercParis4": {
+   "op": "m180",
+   "applies_to": "tools/gpchain band pieces of ves2566-repair1.tifxyz (F-585 convention)",
+   "source": "F-596 attempt 6 (VES-3652): a5 geometry + seg x seg chain to organiser segment M1; held-out pieces w019-w023, w037-w042"
+  }
+ }
+}

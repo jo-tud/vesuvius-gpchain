@@ -1,0 +1,777 @@
+{
+ "task": "VES-3938",
+ "finding_repeated": "F-626",
+ "smoke": false,
+ "subset": [
+  "w010",
+  "w027",
+  "w037",
+  "w068",
+  "w108",
+  "w129"
+ ],
+ "frozen": [
+  "w027",
+  "w037"
+ ],
+ "n_pieces": 11,
+ "repo_head": "7746852a9f6a16f3e509909582953e79095eddb4",
+ "wall_s": {
+  "verify": 0.4,
+  "fetch": 1217.3,
+  "cuts": 138.1,
+  "kcut": 10.6,
+  "infer": 1430.8
+ },
+ "gpu_h": 0.3898611111111111,
+ "validity": {
+  "inputs": true,
+  "clean_clone": true,
+  "controls": true,
+  "stored_agrees_with_results": true
+ },
+ "controls": {
+  "PC_CMP": {
+   "w010": {
+    "n_diffs": 0,
+    "ok": true
+   },
+   "w027": {
+    "n_diffs": 0,
+    "ok": true
+   },
+   "w037": {
+    "n_diffs": 0,
+    "ok": true
+   },
+   "w068": {
+    "n_diffs": 0,
+    "ok": true
+   },
+   "w108": {
+    "n_diffs": 0,
+    "ok": true
+   },
+   "w129": {
+    "n_diffs": 0,
+    "ok": true
+   }
+  },
+  "NC_SWAP": {
+   "w010<-w027": {
+    "flagged": {
+     "chain_json": true,
+     "flat_obj": true,
+     "render": true,
+     "maps": true
+    },
+    "E_ok": false,
+    "ok": true
+   },
+   "w027<-w037": {
+    "flagged": {
+     "chain_json": true,
+     "flat_obj": true,
+     "render": true,
+     "maps": true
+    },
+    "E_ok": false,
+    "ok": true
+   },
+   "w037<-w068": {
+    "flagged": {
+     "chain_json": true,
+     "flat_obj": true,
+     "render": true,
+     "maps": true
+    },
+    "E_ok": false,
+    "ok": true
+   },
+   "w068<-w108": {
+    "flagged": {
+     "chain_json": true,
+     "flat_obj": true,
+     "render": true,
+     "maps": true
+    },
+    "E_ok": false,
+    "ok": true
+   },
+   "w108<-w129": {
+    "flagged": {
+     "chain_json": true,
+     "flat_obj": true,
+     "render": true,
+     "maps": true
+    },
+    "E_ok": false,
+    "ok": true
+   },
+   "w129<-w010": {
+    "flagged": {
+     "chain_json": true,
+     "flat_obj": true,
+     "render": true,
+     "maps": true
+    },
+    "E_ok": false,
+    "ok": true
+   }
+  },
+  "NC_EPS": {
+   "fc_r": {
+    "diffs": [
+     "/render/column_03/frame/r: 0.9962683460989992 != 0.9962673460989991"
+    ],
+    "ok": true
+   },
+   "map_px": {
+    "equal": false,
+    "n_diff": 1,
+    "n": 6786000,
+    "max_abs": 1,
+    "ok": true
+   },
+   "flat_obj": {
+    "equal": false,
+    "n_lines": 223381,
+    "n_vt": 148536,
+    "n_vt_over_tol": 1,
+    "n_other_lines_diff": 0,
+    "max_abs_vt": 9.999999974752427e-07,
+    "ok": true
+   }
+  },
+  "PC_OBJ": {
+   "equal": true,
+   "n_lines": 223381,
+   "n_vt": 148536,
+   "n_vt_over_tol": 0,
+   "n_other_lines_diff": 0,
+   "max_abs_vt": 0.0
+  },
+  "ok": true
+ },
+ "stored_record": {
+  "w010": {
+   "stored_results_ok": true,
+   "chain_covered_stored": true
+  },
+  "w027": {
+   "stored_results_ok": true,
+   "chain_covered_stored": true
+  },
+  "w037": {
+   "stored_results_ok": true,
+   "chain_covered_stored": true
+  },
+  "w068": {
+   "stored_results_ok": true,
+   "chain_covered_stored": true
+  },
+  "w108": {
+   "stored_results_ok": true,
+   "chain_covered_stored": true
+  },
+  "w129": {
+   "stored_results_ok": true,
+   "chain_covered_stored": true
+  }
+ },
+ "bars": {
+  "V": true,
+  "E": true,
+  "GPU": true
+ },
+ "windings_V_ok": 6,
+ "windings_E_ok": 6,
+ "per_winding": {
+  "w010": {
+   "V": {
+    "pieces_new": [
+     "column_01"
+    ],
+    "pieces_stored": [
+     "column_01"
+    ],
+    "covered_new": true,
+    "covered_stored": true,
+    "pieces": {
+     "column_01": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     }
+    },
+    "ok": true
+   },
+   "E": {
+    "chain_json": [],
+    "render": {
+     "column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 23424000,
+      "max_abs": 0
+     }
+    },
+    "maps": {
+     "S_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 1464000,
+      "max_abs": 0
+     }
+    },
+    "kcut": {
+     "column_01": []
+    },
+    "map_logs": {
+     "S": []
+    },
+    "flat_obj": {
+     "equal": true,
+     "n_lines": 21811,
+     "n_vt": 14472,
+     "n_vt_over_tol": 0,
+     "n_other_lines_diff": 0,
+     "max_abs_vt": 1.9099388737231493e-11
+    },
+    "ok": true
+   }
+  },
+  "w027": {
+   "V": {
+    "pieces_new": [
+     "column_01"
+    ],
+    "pieces_stored": [
+     "column_01"
+    ],
+    "covered_new": true,
+    "covered_stored": true,
+    "pieces": {
+     "column_01": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true,
+        "frozen": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true,
+        "frozen": true
+       }
+      }
+     }
+    },
+    "ok": true
+   },
+   "E": {
+    "chain_json": [],
+    "render": {
+     "column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 71808000,
+      "max_abs": 0
+     }
+    },
+    "maps": {
+     "S_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 4488000,
+      "max_abs": 0
+     },
+     "frozen_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 4488000,
+      "max_abs": 0
+     }
+    },
+    "kcut": {
+     "column_01": []
+    },
+    "map_logs": {
+     "S": [],
+     "frozen": []
+    },
+    "flat_obj": {
+     "equal": true,
+     "n_lines": 57545,
+     "n_vt": 38238,
+     "n_vt_over_tol": 0,
+     "n_other_lines_diff": 0,
+     "max_abs_vt": 1.8042101146420464e-10
+    },
+    "ok": true
+   }
+  },
+  "w037": {
+   "V": {
+    "pieces_new": [
+     "column_01"
+    ],
+    "pieces_stored": [
+     "column_01"
+    ],
+    "covered_new": true,
+    "covered_stored": true,
+    "pieces": {
+     "column_01": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "segments",
+       "maps": {
+        "S": true,
+        "frozen": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "segments",
+       "maps": {
+        "S": true,
+        "frozen": true
+       }
+      }
+     }
+    },
+    "ok": true
+   },
+   "E": {
+    "chain_json": [],
+    "render": {
+     "column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 121344000,
+      "max_abs": 0
+     }
+    },
+    "maps": {
+     "S_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7584000,
+      "max_abs": 0
+     },
+     "frozen_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7584000,
+      "max_abs": 0
+     }
+    },
+    "kcut": {
+     "column_01": []
+    },
+    "map_logs": {
+     "S": [],
+     "frozen": []
+    },
+    "flat_obj": {
+     "equal": true,
+     "n_lines": 79133,
+     "n_vt": 52596,
+     "n_vt_over_tol": 0,
+     "n_other_lines_diff": 0,
+     "max_abs_vt": 1.0077201295644045e-09
+    },
+    "ok": true
+   }
+  },
+  "w068": {
+   "V": {
+    "pieces_new": [
+     "column_01",
+     "column_02"
+    ],
+    "pieces_stored": [
+     "column_01",
+     "column_02"
+    ],
+    "covered_new": true,
+    "covered_stored": true,
+    "pieces": {
+     "column_01": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     },
+     "column_02": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     }
+    },
+    "ok": true
+   },
+   "E": {
+    "chain_json": [],
+    "render": {
+     "column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 123238400,
+      "max_abs": 0
+     },
+     "column_02": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 120787200,
+      "max_abs": 0
+     }
+    },
+    "maps": {
+     "S_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7702400,
+      "max_abs": 0
+     },
+     "S_column_02": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7549200,
+      "max_abs": 0
+     }
+    },
+    "kcut": {
+     "column_01": [],
+     "column_02": []
+    },
+    "map_logs": {
+     "S": []
+    },
+    "flat_obj": {
+     "equal": true,
+     "n_lines": 143564,
+     "n_vt": 95442,
+     "n_vt_over_tol": 0,
+     "n_other_lines_diff": 0,
+     "max_abs_vt": 2.823753675329499e-09
+    },
+    "ok": true
+   }
+  },
+  "w108": {
+   "V": {
+    "pieces_new": [
+     "column_01",
+     "column_02",
+     "column_03"
+    ],
+    "pieces_stored": [
+     "column_01",
+     "column_02",
+     "column_03"
+    ],
+    "covered_new": true,
+    "covered_stored": true,
+    "pieces": {
+     "column_01": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     },
+     "column_02": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     },
+     "column_03": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     }
+    },
+    "ok": true
+   },
+   "E": {
+    "chain_json": [],
+    "render": {
+     "column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 117024000,
+      "max_abs": 0
+     },
+     "column_02": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 120870400,
+      "max_abs": 0
+     },
+     "column_03": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 108576000,
+      "max_abs": 0
+     }
+    },
+    "maps": {
+     "S_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7314000,
+      "max_abs": 0
+     },
+     "S_column_02": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7554400,
+      "max_abs": 0
+     },
+     "S_column_03": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 6786000,
+      "max_abs": 0
+     }
+    },
+    "kcut": {
+     "column_01": [],
+     "column_02": [],
+     "column_03": []
+    },
+    "map_logs": {
+     "S": []
+    },
+    "flat_obj": {
+     "equal": true,
+     "n_lines": 223381,
+     "n_vt": 148536,
+     "n_vt_over_tol": 0,
+     "n_other_lines_diff": 0,
+     "max_abs_vt": 6.4192136051133275e-09
+    },
+    "ok": true
+   }
+  },
+  "w129": {
+   "V": {
+    "pieces_new": [
+     "column_01",
+     "column_02",
+     "column_03"
+    ],
+    "pieces_stored": [
+     "column_01",
+     "column_02",
+     "column_03"
+    ],
+    "covered_new": true,
+    "covered_stored": true,
+    "pieces": {
+     "column_01": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     },
+     "column_02": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     },
+     "column_03": {
+      "new": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      },
+      "stored": {
+       "fc_ok": true,
+       "order": "reversed",
+       "reference": "radial",
+       "maps": {
+        "S": true
+       }
+      }
+     }
+    },
+    "ok": true
+   },
+   "E": {
+    "chain_json": [],
+    "render": {
+     "column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 126924800,
+      "max_abs": 0
+     },
+     "column_02": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 117849600,
+      "max_abs": 0
+     },
+     "column_03": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 122304000,
+      "max_abs": 0
+     }
+    },
+    "maps": {
+     "S_column_01": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7932800,
+      "max_abs": 0
+     },
+     "S_column_02": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7365600,
+      "max_abs": 0
+     },
+     "S_column_03": {
+      "equal": true,
+      "n_diff": 0,
+      "n": 7644000,
+      "max_abs": 0
+     }
+    },
+    "kcut": {
+     "column_01": [],
+     "column_02": [],
+     "column_03": []
+    },
+    "map_logs": {
+     "S": []
+    },
+    "flat_obj": {
+     "equal": true,
+     "n_lines": 264461,
+     "n_vt": 175842,
+     "n_vt_over_tol": 0,
+     "n_other_lines_diff": 0,
+     "max_abs_vt": 1.9274011719971895e-08
+    },
+    "ok": true
+   }
+  }
+ },
+ "verdict": "PASS (verdicts and every compared field and byte repeat)"
+}

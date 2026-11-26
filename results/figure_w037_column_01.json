@@ -1,0 +1,60 @@
+{
+ "winding": "w037",
+ "piece": "column_01",
+ "piece_mm": [
+  44.415218935337386,
+  13.488196039449042
+ ],
+ "z_slice": 13492.97314453125,
+ "layer": 8,
+ "auc": {
+  "S": 0.9445004191349256,
+  "frozen": 0.9148154944388471
+ },
+ "n_pos": 297952,
+ "n_neg": 728806,
+ "label_segments": [
+  "20231012184424",
+  "20231210121321"
+ ],
+ "frame_r": 0.9917323137581259,
+ "order": "reversed",
+ "order_reference": "segments",
+ "gp_check": {
+  "status": "PASS",
+  "n_required_pass": 3,
+  "mesh_count": 208
+ },
+ "coverage": {
+  "f626": {
+   "n_ok": 120,
+   "n_ct_valid": 120,
+   "share": 1.0,
+   "bar": 0.9,
+   "not_ct_valid": [],
+   "not_covered": []
+  },
+  "f623_first_read": "101 of 120 (F-623)"
+ },
+ "crop_xy": [
+  3493,
+  3529,
+  5448,
+  5081
+ ],
+ "source": "stored F-626 outputs",
+ "held_back": {
+  "rule": "image px within 5 L2 vx of a vertex of 9 internal held-out Paris 4 test windows (geometry only), plus px whose 16-layer render slab (+-7.5 vx) comes within 3 vx of a window surface, dilated by 3 px",
+  "n_px_vertex_rule": 4733,
+  "n_px_slab_rule": 80616,
+  "n_px": 98714,
+  "n_valid_px": 5054800,
+  "share": 0.019528764738466407,
+  "auc_before_mask": {
+   "S": 0.9446072237176353,
+   "frozen": 0.9150807414766711,
+   "n_pos": 301239,
+   "n_neg": 733925
+  }
+ }
+}

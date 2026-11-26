@@ -1,0 +1,13 @@
+{
+ "about": "GP chain render contract (tools/gpchain/render_contract.py, chain.py --render). Values are F-576's (VES-3453 run.py render, normals.py, confirm.py frame2); VES-3519 moved them here. Kept out of chain_config.json so the geometry config bytes (F-449 / F-576 reopen-if) do not change.",
+ "finding": "F-576",
+ "render": {"image": "inkcheck:ves572", "image_id": "06d1e850b2e1", "scale": 1, "num_slices": 16, "slice_step": 1,
+            "threads": 4, "memory": "8g", "cache_gb": 4},
+ "layer_order": {"n": 20000, "seed": 3453, "d_max": 8.0, "min_near": 500, "min_agree": 0.95, "min_agree_radial": 0.9,
+                 "workers": 8,
+                 "segments_convention": "villa render of the label segment meshes is read reversed (F-561); the models read inwards (F-005, F-184)"},
+ "frame": {"n": 100000, "seed": 3453, "bar": 0.95, "rim_max": 0.01, "rim_px": 3, "rim_cells": 0.5,
+           "rim_cells_why": "VES-3539 attempt 2: villa leaves the outer half node cell unrendered; at scale 0.2 the width stays 3 px",
+           "rim_limit": "edge_band",
+           "rim_limit_why": "VES-3868 (F-623 attempt 2): no-data share <= the piece's own edge-band share (no-data share follows band share, r 0.973 over 214 F-623 pieces); rim_max is the old fixed rule (rim_limit fixed)"}
+}

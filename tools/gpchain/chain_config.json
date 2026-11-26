@@ -1,0 +1,23 @@
+{
+ "about": "GP output chain defaults (tools/gpchain/chain.py). Decision VES-2611 on F-439: the f439 route is the default stage on repaired fits only; any other fit takes the f429 route and chain.json logs why. villa / VC3D defaults are untouched (every option here is an opt-in flag of our own tools).",
+ "decision": "VES-2611",
+ "repaired_rule": "the fit directory holds fold_repair.json (tools/gpchain/fold_repair.py, F-438 route) whose out_sha256 equals the fit's own x/y/z.tif",
+ "big_quad_factor": 4.0,
+ "routes": {
+  "f439": {
+   "finding": "F-439",
+   "when": "repaired fit",
+   "isometric_step": {"iters": 50, "density": 4},
+   "rim_fill": {"r": 0.5, "max_edge": 2.0},
+   "band_cuts": {"piece": 1200, "smooth": 151, "rim_fill": 0.5, "rim_max_edge": 2.0}
+  },
+  "f429": {
+   "finding": "F-429",
+   "when": "unrepaired fit",
+   "why": "F-439: stock density-4 quads cross unrepaired tears (36 quads > 4x median on unrepaired w130, 0 on the F-438 repaired fit), and the rim fill can extend a triangle across a tear",
+   "isometric_step": {"iters": 50, "density": 1},
+   "rim_fill": null,
+   "band_cuts": {"piece": 300, "smooth": 151, "rim_fill": 0.0, "rim_max_edge": 0.0}
+  }
+ }
+}
